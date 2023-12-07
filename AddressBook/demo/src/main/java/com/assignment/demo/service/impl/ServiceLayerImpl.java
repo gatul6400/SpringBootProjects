@@ -69,11 +69,6 @@ public class ServiceLayerImpl implements ServiceLayer {
         return response.stream().map(res -> new SearchResponse(res.getFirstName(), res.getLastName(), res.getAddress(), res.getPhoneNumber())).collect(Collectors.toList());
     }
 
-    @Override
-    public List<SearchResponse> fetchAllRecord() {
-        return null;
-    }
-
     private AddressBook getAddressBookDummy(final String firstName, final String lastName, final String address, final String pNum) {
         final AddressBook book = new AddressBook();
         book.setFirstName(firstName);
