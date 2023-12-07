@@ -27,11 +27,6 @@ public class ControllerLayer {
         serviceLayer.createDummyData();
     }
 
-    @GetMapping()
-    public List<SearchResponse> fetchAllRecordsFromAddressBook(){
-        return null;
-    }
-
     @GetMapping("/search")
     public List<SearchResponse> searchRecordsFromAddressBook(@RequestParam Map<String, String> reqParams){
         String name = reqParams.getOrDefault("name", "");
