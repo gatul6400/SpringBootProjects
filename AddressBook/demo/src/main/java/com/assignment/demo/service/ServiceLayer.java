@@ -12,6 +12,4 @@ public interface ServiceLayer {
     void createDummyData();
 
     List<SearchResponse> searchRecord(final String name, final String pNumber);
-
-    List<SearchResponse> fetchAllRecord();
 }
